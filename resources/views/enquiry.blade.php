@@ -9,8 +9,8 @@
     <!-- <script src="/js/validation.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="{{asset('asset/js/validation.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
     <style>
         .margin-top{
@@ -24,11 +24,11 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3 margin-top">
                 <h3 class='center-align'>Enquiry form</h3><br>
-                <form action="enquiry" id='frm'>
+                <form action="enquiry" id='frm' method='post'>
                     @csrf
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name='name' class="form-control" >
+                        <input type="text" name='name' class="form-control" id="name">
                     </div>
                     <div class="form-group">
                         <label for="gender">Gender:</label>
