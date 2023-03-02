@@ -39,7 +39,7 @@ class EnquiryController extends Controller
         $data = Enquiry::all();
         $from='';
         $to='';
-        if($req->has('from_date') && $req->has('to_date')){
+        if($req->filled('from_date') && $req->filled('to_date')){
             $from = $req->input('from_date');
             $to = $req->input('to_date');
             $data = Enquiry::whereBetween('birth_date', [$from, $to])->get();
