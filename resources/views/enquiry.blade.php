@@ -13,8 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
     <style>
-        .margin-top{
-            margin-top:30px;
+        .margin-top {
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -38,6 +38,10 @@
                         <label class="radio-inline">
                             <input type="radio" name='gender' value="Female">Female
                         </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Birth Date:</label>
+                        <input type="date" name='birth_date' class="form-control" id="birthdate">
                     </div>
                     <div class="form-group">
                         <label for="email">Email id:</label>

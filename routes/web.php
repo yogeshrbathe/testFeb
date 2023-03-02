@@ -16,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::view('login','login');
+Route::view('login','login');// for login
 Route::post('login','EnquiryController@login');
-Route::view('enquiry','enquiry');
-Route::get('enquiryList','EnquiryController@enquiryList');
+Route::view('enquiry','enquiry');//for view enquiry form
+Route::get('enquiryList','EnquiryController@enquiryList');//for view enquiry list & filter functionality
+Route::post('enquiryList','EnquiryController@enquiryList');
 Route::post('enquiry','EnquiryController@enquiry');
